@@ -1,13 +1,10 @@
 const data = ["A", "B", "C"];
-const data2 = [1, 2, 3, 44, 5, 6, 7, 8, , 9];
+const data2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // SECTION ---------------------- START
 
 // n - length of our data array.
-for (let i = 0; i < data2.length; i++) {
-  console.log(data2[i]);
-}
-for (let j = 0; j < data2.length; j++) {
-  console.log(data[j]);
+for (let i = 0; i < data.length; i++) {
+  console.log(data[i]);
 }
 // SECTION ---------------------- END
 
@@ -18,10 +15,11 @@ for (let j = 0; j < data2.length; j++) {
 
 // O(n * a)
 // a
-for (let i = 0; i < data2.length; i++) {
+for (let i = 0; i < data.length; i++) {
+  console.log("aggggggggggggggg");
   // n
   for (let j = 0; j < data2.length; j++) {
-    console.log(data[i] + data2[j]);
+    console.log(`${data[i]}: ${data2[j]}`);
   }
 }
 // SECTION ---------------------- END
@@ -35,6 +33,9 @@ for (let i = 0; i < data.length; i++) {
     console.log(data[i] + data[j]);
   }
 }
+
+// Another example:
+
 // SECTION ---------------------- END
 
 // SECTION ---------------------- START
